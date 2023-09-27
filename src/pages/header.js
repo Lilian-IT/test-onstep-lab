@@ -1,5 +1,5 @@
 import React from "react";
-// import Images from "../assets/img/cat.jpg";
+import { GiCircle } from "react-icons/gi";
 import {
   Container,
   Nav,
@@ -34,8 +34,8 @@ const Header = () => {
                       />
                     </Col>
                     <Col xs="auto" className="ps-2">
-                      <Button type="submit" className="btn-search-header">
-                        <i className="fa-regular fa-circle"></i>
+                      <Button type="submit" className="btn-search-header d-flex  justify-content-center align-items-center">
+                      <GiCircle className="icon-circle"/>
                       </Button>
                     </Col>
                   </Row>

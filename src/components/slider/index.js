@@ -9,23 +9,23 @@ export default function SimpleSlider() {
     dots: false,
     infinite: true,
     speed: 500,
-    // initialSlide: 0,
+    initialSlide: 0,
     slidesToShow: 4,
     slidesToScroll: 1,
 
-    responsive: [
-      {
-          breakpoint: 1024,
+    responsive: [ {
+         breakpoint: 1480,
           settings: {
-              slidesToShow: 4,
-              slidesToScroll: 4,
+              slidesToShow: 3,
+              // slidesToScroll: 1,
+            
           }
       },
       {
           breakpoint: 600,
           settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3
+              slidesToShow: 1,
+              slidesToScroll: 1,
           }
       },
       {
@@ -40,29 +40,29 @@ export default function SimpleSlider() {
   };
   return (
     <Slider {...settings} >
-      <div className="slider_img">
+      <div className="slider_img ">
         <Image src={ImageGroup} alt='image'  className="rounded-4"/>
-        <button className="btn-slider mt-3">Lorem Ipsum</button>
+        <button className="btn-slider mt-3">Lorem Ipsum 1</button>
       </div>
       <div className="slider_img">
       <Image src={ImageGroup} alt='image'  className="rounded-4"/>
-      <button className="btn-slider mt-3">Lorem Ipsum</button>
+      <button className="btn-slider mt-3">Lorem Ipsum 2</button>
       </div>
       <div className="slider_img">
       <Image src={ImageGroup} alt='image'  className="rounded-4"/>
-      <button className="btn-slider mt-3">Lorem Ipsum</button>
+      <button className="btn-slider mt-3">Lorem Ipsum 3</button>
       </div>
       <div className="slider_img">
       <Image src={ImageGroup} alt='image'  className="rounded-4"/>
-      <button className="btn-slider mt-3">Lorem Ipsum</button>
+      <button className="btn-slider mt-3">Lorem Ipsum 4</button>
       </div>
       <div className="slider_img">
       <Image src={ImageGroup} alt='image'  className="rounded-4"/>
-      <button className="btn-slider mt-3">Lorem Ipsum</button>
+      <button className="btn-slider mt-3">Lorem Ipsum 5</button>
       </div>
       <div className="slider_img">
       <Image src={ImageGroup} alt='image'  className="rounded-4"/>
-      <button className="btn-slider mt-3">Lorem Ipsum</button>
+      <button className="btn-slider mt-3">Lorem Ipsum 6</button>
       </div>
     </Slider>
   );
